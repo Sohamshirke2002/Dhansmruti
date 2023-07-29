@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 200vh;
+}
+
+
+/* .banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/cr3.jpg);
+    background-size: cover;
+} */
+
+/* 2 */
+.slider{
+	position: relative;
+	width: 100%;
+	background: #2c3e50; /* darckblue */
+}
+.myslide{
+    height: 100vh;
+    display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #00a7ff; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #00a7ff; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: black; /* blue */
+    font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+    font-weight: bold;
+}
+.txt p{
+	font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 5 */
+
+@media screen and (min-width: 800px) {
+    .colMap{
+        width: 50%;
+    }
+    .colStats{
+        width: 25%;
+    }
+    .paraOfAboutUs{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .colFirm{
+        float: left;
+        width: 25%;
+        margin-bottom : 0.2%;
+        border: 3px solid #273447;
+    
+    }
+
+    .evenfirm{
+        background-color : white;
+    }
+
+    .oddfirm{
+        background-color : white;
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 40px 100px;
+        z-index: 100000;
+    }
+    
+    header.sticky{
+        padding: 5px 100px;
+        background: #fff;
+    }
+    
+    header .logo{
+        position: relative;
+        transition: 0.6s;
+    }
+    
+    header ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header ul li{
+        position: relative;
+        list-style: none;
+    }
+    
+    header ul li a{
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.6s;
+        color: #fff;
+    }
+    header ul li a:hover{
+        color: black;
+    }
+    
+    header.sticky ul li a{
+        color: #fa8128;
+        
+    } 
+    header.sticky ul li a:hover{
+        color: black;
+        
+    }   
+    header #icon{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 800px){   
+    .colMap{
+        width: 100%;
+    }
+    .colStats{
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    .colFirm{
+        float: left;
+        width: 50%;
+        margin-bottom : 0.2%;
+        border: 3px solid #273447;
+
+    }
+    .evenfirm{
+        background-color : white;
+    }
+
+    .oddfirm{
+        background-color : white;
+    }
+
+
+    header #icon{
+        color: black;
+        float: right;
+        margin-right: 40px;
+        font-size: 30px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 23px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 15%;
+        border: 2px solid rgb(162, 160, 160);
+    }
+
+    ul.show{
+        left: 0;
+    }
+
+    #mylinks{
+        display: none;
+    }
+
+.myslide{
+		height: 500px;
+	}
+    .txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 799px){
+    #icon{
+        display: inline-block;
+    }
+    .myslide{
+        height: 275px;
+    }
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+
+    .logo{
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+    header ul li a{
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.6s;
+        color: #fa8128;
+    }
+
+    header ul li a:hover{
+        color: white;
+    }
+
+    header ul li{
+        position: relative;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        font-weight: bold;
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+/* Upto Header and carosel */
+
+.aboutUs{
+    margin: 3%;
+}
+
+/* A little about us */
+.contentAboutUs{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.paraOfAboutUs{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color: rgba(92, 86, 86, 0.88);
+    line-height: 160%;
+}
+
+.paraAboutStats{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(92, 86, 86, 0.88);
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 2%;
+}
+
+#linkToAbout{
+    font-size: larger;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 0.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 15px;
+}
+
+.headingLittle{
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+/* Firm */
+.firm{
+    background-color : #273447;
+    opacity: 0.95;
+    margin-bottom: 3%;
+}
+
+.firmSection{
+    padding-top: 3%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.paraOfFirm{
+    margin-top: 2%;
+    padding-left: 13%;
+    padding-right: 13%;
+    color: whitesmoke;
+    line-height: 160%;
+    margin-bottom: 3%;
+}
+
+.imageFirm{
+    height: 25vh;
+}
+
+.firmName{
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.headingFirm{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    letter-spacing: 1px;
+}
+
+.firmText{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: rgba(92, 86, 86, 0.88);
+}
+
+#linkToAboutme{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 0.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 15px;
+}
+.linkLearn a:hover{
+    background-color: rgb(68, 88, 118)
+}
+
+.linkexplore{
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 4%;
+    padding-bottom: 5%;
+}
+
+.Statstitle{
+    letter-spacing: 2px;
+}
+
+.ContentStats{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.Stats{
+    margin-bottom: 3%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.colStats{
+    float: left;
+    text-align: center;
+}
+
+.rowStats{
+    margin-bottom: 5%;
+}
+
+.mapArea{
+    background-color: #273447;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.colMap{
+    float: left;
+}
+
+.addressMap{
+    text-align: left;
+    margin: 5%;
+    color: white;
+}
+
+.headMap{
+    letter-spacing: 2px;
+    margin-bottom: 3%;
+}
+
+.lastF{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: black;
+    font-size: large;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0%;
+
+}
+
+.addMap{
+    color: whitesmoke;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.BuildWithUs{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 130px;
+}
+
+
+.bwuh{
+    margin-bottom: 2%;
+}
+
+.bwup{
+    color: rgba(92, 86, 86, 0.88);
+    font-size: large;
+}
+
+/* Footer styling */
+
+footer{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    background: #273447;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 ;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s ;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+ 
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+footer .wave{
+    position:absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.jpeg);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 99;
+    opacity: 0.9;
+    bottom: 10px;
+    animation: animateWave_02 5s linear infinite;
+}
+footer .wave#wave3{
+     z-index: 1000;
+
+    opacity: 0.8;
+    bottom: 15px;
+    animation: animateWave 2s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Dhansmruti</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <!-- CSS Files for animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Including CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Js Query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body  onload="myFunction2()">
+
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/image2.png" height="77" width="161">
+        </a>
+        <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul id="mylinks">
+            <li><a href="#">HOME</a></li> 
+            <li><a href="about.html">ABOUT</a></li> 
+            <li><a href="firm.html">SECTORS</a></li> 
+            <li><a href="projects.html">PROJECT</a></li> 
+            <li><a href="carrier.html">CAREER</a></li> 
+            <li><a href="media.html">MEDIA</a></li> 
+            <li><a href="mailto:buildcon@dhansmruti.com">CONTACT</a></li> 
+        </ul>
+    </header>
+    
+    <div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1  style="color: whitesmoke;">Dhansmruti</h1>
+				<p>Non-govt Tech company - Building and Construction<br>
+                We give effective and intime solution to buildcon projects.</p>
+			</div>
+			<img src="images/slider1.jpg" style="width: 100%; height: 100%;opacity: 70%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1  style="color: whitesmoke;">Dhansmruti</h1>
+				<p>Non-govt Tech company - Building and Construction<br>We give effective and intime solution to buildcon projects.</p>
+			</div>
+			<img src="images/slider2.jpeg" style="width: 100%; height: 100%;opacity: 70%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1  style="color: whitesmoke;">Dhansmruti</h1>
+				<p>Non-govt Tech company - Building and Construction<br>We give effective and intime solution to buildcon projects.</p>
+			</div>
+			<img src="images/slider3.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1  style="color: whitesmoke;">Dhansmruti</h1>
+				<p>Non-govt Tech company - Building and Construction<br>We give effective and intime solution to buildcon projects.</p>
+			</div>
+			<img src="images/slider4.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+	</div>
+
+
+    <div class="aboutUs" data-aos="zoom-in">
+        <div class="contentAboutUs">
+            <h2 class="headingLittle" style="color: black;"><b>A LITTLE ABOUT US</b></h2>
+            <div class="paraOfAboutUs">
+                <p>"Welcome to Dhansmruti Group, a provider of construction and building services. We are dedicated to delivering excellence in every project we undertake, from small renovations to large-scale developments. Our team of experienced professionals is committed to using the latest tools and techniques to ensure that every project is completed to the highest standards. With our focus on quality, safety, and customer satisfaction!"</p>
+            </div>
+            <div class="linkLearn">
+                <a id="linkToAbout" href="about.html">Learn More -></a>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-left: 0.5%; padding-right: 0.5%;"class="firm">
+    <div class="firmSection">
+        <div class="firmh" data-aos="zoom-in">
+            <h2 class="headingLittle"><b>OUR SECTORS</b></h2>
+            <div class="paraOfFirm">
+            <p>" Whether you're looking to build a new hospital, clinic, or commercial space, we have the skills and expertise to turn your vision into reality !"</p>
+        </div>
+        </div>
+        <div>
+            <div class="colFirm" data-aos="fade-down">
+                <div class="imageFirm">
+                    <img src="images/firm1.jpeg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="oddfirm">
+                    <p class="firmName">FIRM1</p>
+                    <h3 class="headingFirm">BUILDCON</h3>
+                    <p class="firmText">Experience the calibre of Builcon.</p>
+                    <div class="linkexplore">
+                        <a id="linkToAboutme" href="firm.html#buildcon">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="colFirm" data-aos="fade-up">
+                <div class="imageFirm">
+                    <img src="images/firm2.jpeg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="evenfirm"> 
+                    <p class="firmName">FIRM2</p>
+                    <h3 class="headingFirm">TEXTILE</h3>
+                    <p class="firmText">Textile is a textile and fabric industry. </p>
+                    <div class="linkexplore">
+                        <a id="linkToAboutme" href="firm.html#textile">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="colFirm" data-aos="fade-down">
+                <div class="imageFirm">
+                    <img src="images/firm3.jpeg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="oddfirm">
+                    <p class="firmName">FIRM3</p>
+                    <h3 class="headingFirm">KUBERAA</h3>
+                    <p class="firmText">Construction of road tunnels.</p>
+                    <div class="linkexplore">
+                        <a id="linkToAboutme" href="firm.html#kuberaa">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="colFirm" data-aos="fade-up">
+                <div class="imageFirm">
+                    <img src="images/firm4.jpeg" alt="" style="width: 100%; height: 100%">
+                </div>
+                <div class="evenfirm">
+                    <p class="firmName">FIRM4</p>
+                    <h3 class="headingFirm">GINNING</h3>
+                    <p class="firmText">Ginning, dedicated cotton ginning firm.</p>
+                    <div class="linkexplore">
+                        <a id="linkToAboutme" href="firm.html#ginning">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="Stats" data-aos="fade-in">
+    <div class="ContentStats">
+        <h2 class="Statstitle"><b>INSIGHTS</b></h2>
+        <div class="paraOfAboutUs">
+            <p>"Our team of experienced professionals uses the latest tools and techniques to ensure that project is completed to the highest standards."</p>
+        </div>
+    </div>
+    <div class="rowStats">
+        <div class="colStats">
+            <img src="images/stat1.png" height="40%" width="30%">
+            <p style="margin-top: 4%;"> <h4>4036</h4>Police Quaters</p>
+        </div>
+        <div class="colStats">
+            <img src="images/stat2.png" height="40%" width="30%">
+            <p style="margin-top: 4%;"> <h4>60 %</h4>of India's highways</p>
+        </div>
+        <div class="colStats">
+            <img src="images/stat3.png" height="40%" width="30%">
+            <p style="margin-top: 4%;"> <h4>365kms</h4>of tunneling</p>
+        </div>
+        <div class="colStats">
+            <img src="images/stat4.png" height="40%" width="30%">
+            <p style="margin-top: 4%;"> <h4>20 Cr </h4>profit</p>
+        </div>
+    </div>
+    </div>
+
+    <div style="margin-bottom: 3%;">
+        <div class="paraAboutStats" data-aos="fade-in" >
+            <p>"The map highlights the districts in Maharashtra where our construction company has completed projects, showcasing our wide range of experience and expertise in the region."</p>
+        </div>
+        <div data-aos="zoom-in" style="text-align: center;">
+            <img src="images/mapStats.png" alt="" height="75%" width="75%">
+        </div>
+    </div>
+
+    <div class="mapArea">
+    <div class="rowMap">
+        <div class="colMap" data-aos="fade-right">
+            <div class="addressMap">
+                <h2 class="headMap">DHANSMRUTI GROUP</h2>
+                <p class="footerele">The Dhansmruti Group operates in industry sectors - Construction | Travel | Education | Foundation
+                </p>
+                <p style="margin-top: 3%;"> Visit us at :</p>
+                <address class="addMap">
+                    Unit No 214,<br>
+                    Dhansmruti Buildcon Pvt Ltd World Trade Centre,<br>
+                    TOWER-2, EON Free Zone, Kharadi,<br>
+                    Pune, Maharashtra, 411014.<br>
+                    Contact : +91 8459970196 <br>
+                    Email : <a href = "mailto:buildcon@dhansmruti.com" style="color: #F5F5DC;">buildcon@dhansmruti.com</a>
+                </address>
+            </div>
+        </div>
+        <div class="colMap" data-aos="fade-left">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=300&amp;hl=en&amp;q=dhansmruti group&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://pdflist.com/" alt="pdf download">Pdf download</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:300px;padding:2%;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:300px;}.gmap_iframe {height:300px!important;}</style></div>
+        </div>
+    </div>
+    </div>
+
+    <div  style="margin-top:3%" class="BuildWithUs" data-aos="zoom-in">
+        <h1 class="bwuh">BUILD WITH US !</h1>
+        <p class="bwup">
+            We are specializes in delivering high-quality projects. We have a team of experienced professionals who are dedicated to providing excellent service and exceeding client expectations. Our portfolio includes a wide range of projects such as residential, governmental, textile, and industrial developments
+        </p>
+    </div>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://economictimes.indiatimes.com/company/dhansmruti-textiles-private-limited/U17200PN2010PTC135939" target="_blank"><ion-icon name="logo-google"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/company/dhansmruti-group/about/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul> 
+        <p>© 2023 Dhansmruti.com | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- AOS Animation JS file -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:170,
+            duration:1000,
+        });
+    </script>
+
+    <!-- JS Query file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- External JS File -->
+    <script src="index.js"></script>
+</body>
+</html>
